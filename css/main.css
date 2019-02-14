@@ -1,1 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|Cabin');
 
+body {
+    background-color: #e3eaf0;
+    font-family: Barlow, Verdana, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em 0 1.5em 0;
+    justify-content: space-around;
+    background-color: #e3eaf0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 40px;
+    border-bottom: 2px solid rgba(221, 219, 219, 0.7);
+}
+
+.content {
+    margin-top: 150px;
+}
+
+.logo {
+    margin-top: .5em;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 3em 0 0;
+    font-size: 1.5em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #002442;
+    font-family: Cabin, Verdana, sans-serif;
+}
+
+li a:active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
+}
+
+li a:hover {
+    color: #492700;
+}
+
+#form-title {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#form {
+    text-align: center;
+}
+
+#form input[type="submit"] {
+    margin-top: 5px;
+}
+
+#email {
+    width: 25em;
+    height: 2.7em;
+    padding-left: 7px;
+    border: transparent;
+    border-radius: 5px;
+    font-family: Barlow, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+#submit {
+    width: 10em;
+    height: 2.2em;
+    background-color: #FB8B24;
+    border: transparent;
+    border-radius: 10px;
+    font-family: Cabin, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    box-shadow: 0 0 17px #407a29;
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #407a29;
+    }
+}
+
+#features {
+    width: 900px;
+    margin: 70px auto;
+}
+
+.feature-1,
+.feature-2,
+.feature-3 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-1-description,
+.feature-2-description,
+.feature-3-description {
+    margin-left: 72px;
+}
+
+h2 {
+    margin-bottom: -15px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#email:focus {
+    outline: none;
+    box-shadow: 0 0 25px #5f8aad;
+}
+
+i {
+    margin-top: 8px !important;
+    font-size: 70px !important;
+    color: #004680 !important;
+    text-shadow: 0 0 20px #ade5ff !important;
+}
+
+#howitworks {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing {
+    margin: 70px auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    border: 2px solid rgba(82, 82, 82, 0.295);
+    width: calc(100% / 3);
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #919191;
+}
+
+.card-header {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    background-color: #004680;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width : 600px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: space-around;
+        border-bottom: 3px solid #c0c0c036;
+    }
+
+    nav {
+        align-self: center;
+        padding: 0 0.8em 0 0;
+    }
+}
